@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orkut Recriado</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="login-container" id="login-container">
+        <h2>Bem-vindo ao Orkut</h2>
+        <input type="text" id="username-input" placeholder="Nome de usuário">
+        <button onclick="joinOrkut()">Entrar</button>
+    </div>
+    <div class="chat-container" id="chat-container" style="display: none;">
+        <div class="chat-header">
+            Orkut Recriado
+        </div>
+        <div class="chat-messages" id="chat-messages">
+            <!-- Mensagens aparecerão aqui -->
+        </div>
+        <div class="chat-input">
+            <input type="text" id="message-input" placeholder="Digite sua mensagem...">
+            <button onclick="sendMessage()">Enviar</button>
+        </div>
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="scripts/main.js"></script>
+</body>
+</html>

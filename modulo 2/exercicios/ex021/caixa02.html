@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: grey;
+        }
+        
+        header > h1 {
+            background-color: black;
+            color: white;
+            padding: 3px;
+            margin: 4px auto 4px auto;
+            border: 5px solid black;
+            border-radius: 5px;
+            text-align: center;
+        }
+        
+        article > aside {
+            color: blue;
+        }
+
+        nav {
+            background-color: navy;
+            padding: 3px;
+            box-shadow: 1px 1px 1px black;
+        }
+
+        nav > a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin-right: 20px;
+        }
+
+        nav > a:hover {
+            text-decoration: underline;
+            color: darkorange;
+        }
+
+        main{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px;
+        }
+
+        article {
+            background-color: lightgray;
+        }
+
+        #assuntos {
+            text-align: justify;
+            margin: 20px;
+        }
+
+        #noticias {
+            text-align: justify;
+            margin: 20px;
+        }
+
+        #fofoca {
+            text-align: justify;
+            margin: 20px;
+        }
+
+        footer{
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 1px;
+            margin: 0px;
+        }
+
+        footer > p { 
+            margin: 0px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+            <article>
+                <h2>Lorem 1</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, vel! Reiciendis eos architecto a iusto, distinctio sunt quos harum neque ipsa laborum voluptatum aspernatur eius, non rerum voluptatibus, assumenda eum.</p>
+            </article>
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Cachorro morde pato</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat architecto officiis quaerat. Debitis eum, tempore hic quo est similique, temporibus quod illum officiis non sunt, fuga possimus voluptas quibusdam laboriosam?</p>
+            </article>
+        </section>
+        <section id="fofoca">
+            <article>
+                <h2>Gato rouba meia</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique eum laboriosam qui quibusdam, blanditiis quia. Quisquam, expedita enim quas obcaecati cum, culpa repudiandae natus accusantium ad ipsam quis inventore vero?</p>
+                <aside>Fake News</aside>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>feito por mim</p>
+    </footer>
+</body>
+</html>
